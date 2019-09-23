@@ -259,3 +259,199 @@ JavaScript error: https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-9
 1569269687182	Marionette	WARN	TLS certificate errors will be ignored for this session
 [Parent 30250, Gecko_IOThread] WARNING: pipe error (83): Conexão fechada pela outra ponta: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
 1569269853870	Marionette	INFO	Stopped listening on port 34851
+1569270402160	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2pL0n1"
+1569270402545	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569270402545	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569270402545	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569270402545	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569270404221	Marionette	INFO	Listening on port 33185
+1569270404315	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 31714, Gecko_IOThread] WARNING: pipe error (83): Conexão fechada pela outra ponta: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1569270433652	Marionette	INFO	Stopped listening on port 33185
+1569272115343	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePUvpTJ"
+1569272115652	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569272115652	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569272115652	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569272115652	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569272117073	Marionette	INFO	Listening on port 38839
+1569272117156	Marionette	WARN	TLS certificate errors will be ignored for this session
+1569272165033	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile8H2GnN"
+1569272165334	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569272165335	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569272165335	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569272165335	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569272166972	Marionette	INFO	Listening on port 36463
+1569272167065	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 506, Gecko_IOThread] WARNING: pipe error (83): Conexão fechada pela outra ponta: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+[Parent 32702, Gecko_IOThread] WARNING: pipe error (62): Conexão fechada pela outra ponta: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+[Parent 32702, Gecko_IOThread] WARNING: pipe error (83): Conexão fechada pela outra ponta: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1569272179273	Marionette	INFO	Stopped listening on port 38839
+1569272180360	Marionette	INFO	Stopped listening on port 36463
+1569272180604	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilenfAhnA"
+1569272180961	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569272180961	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569272180961	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569272180961	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569272182586	Marionette	INFO	Listening on port 44231
+1569272182629	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 821, Gecko_IOThread] WARNING: pipe error (83): Conexão fechada pela outra ponta: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1569272193086	Marionette	INFO	Stopped listening on port 44231
+1569272193227	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1sEU7N"
+1569272193543	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569272193543	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569272193543	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569272193543	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569272194932	Marionette	INFO	Listening on port 33011
+1569272195033	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 1161, Gecko_IOThread] WARNING: pipe error (83): Conexão fechada pela outra ponta: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1569272213316	Marionette	INFO	Stopped listening on port 33011
+1569272459828	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileY6FXuG"
+1569272460159	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569272460159	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569272460159	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569272460159	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569272461554	Marionette	INFO	Listening on port 38899
+1569272461636	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1569272662981	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGL7Ued"
+1569272663277	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569272663278	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569272663278	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569272663278	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569272664715	Marionette	INFO	Listening on port 43165
+1569272664795	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 2088, Gecko_IOThread] WARNING: pipe error (83): Conexão fechada pela outra ponta: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1569272683421	Marionette	INFO	Stopped listening on port 43165
+1569272771795	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileMmME5K"
+1569272772100	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569272772100	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569272772101	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569272772101	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569272773573	Marionette	INFO	Listening on port 39023
+1569272773606	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 2433, Gecko_IOThread] WARNING: pipe error (83): Conexão fechada pela outra ponta: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1569273033612	Marionette	INFO	Stopped listening on port 39023
+1569273646589	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5CLIXV"
+1569273646886	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569273646886	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569273646886	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569273646886	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569273648502	Marionette	INFO	Listening on port 38495
+1569273648601	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 3056, Gecko_IOThread] WARNING: pipe error (83): Conexão fechada pela outra ponta: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1569273669398	Marionette	INFO	Stopped listening on port 38495
+1569273854560	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVn2DL9"
+1569273854871	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569273854871	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569273854871	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569273854871	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569273856556	Marionette	INFO	Listening on port 40635
+1569273856570	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 3402, Gecko_IOThread] WARNING: pipe error (83): Conexão fechada pela outra ponta: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1569273875073	Marionette	INFO	Stopped listening on port 40635
+1569273935963	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQ2ocg5"
+1569273936258	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569273936258	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569273936258	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569273936258	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569273937842	Marionette	INFO	Listening on port 34413
+1569273937882	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 4077, Chrome_ChildThread] WARNING: pipe error (3): Conexão fechada pela outra ponta: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 3827, Chrome_ChildThread] WARNING: pipe error (3): Conexão fechada pela outra ponta: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+Exiting due to channel error.
+1569274055717	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilentm9Dr"
+1569274056022	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569274056022	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569274056022	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569274056022	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569274057487	Marionette	INFO	Listening on port 37135
+1569274057538	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-9891172707995683&output=html&h=90&twa=1&slotname=6193676054&adk=1460502994&adf=3297436742&w=808&fwrn=4&fwrnh=100&lmt=1569274059&guci=2.2.0.0.2.2.0.0&format=808x90&url=https%3A%2F%2Fwww.carrosnaweb.com.br%2Favancada.asp&flash=0&fwr=0&rh=90&rw=808&wgl=1&dt=1569274058952&bpp=14&bdt=747&fdt=421&idt=422&shv=r20190918&cbv=r20190131&saldr=aa&abxe=1&correlator=2774746964624&frm=20&pv=2&ga_vid=225042177.1569274059&ga_sid=1569274059&ga_hid=710958196&ga_fc=0&icsg=141995&dssz=17&mdo=0&mso=0&u_tz=-180&u_his=1&u_java=0&u_h=1080&u_w=1920&u_ah=1053&u_aw=1920&u_cd=24&u_nplug=0&u_nmime=0&adx=221&ady=149&biw=948&bih=939&scr_x=0&scr_y=0&eid=151527007%2C229739146%2C229739148&oid=3&rx=0&eae=0&fc=912&brdim=960%2C27%2C960%2C27%2C1920%2C27%2C960%2C1025%2C960%2C951&vis=1&rsz=d%7Cd%7CeE%7C&abl=NS&pfx=0&fu=1040&bc=29&ifi=1&uci=a!1&xpc=ukhNbrftN6&p=https%3A//www.carrosnaweb.com.br&dtd=452, line 1: ReferenceError: buildAdSlot is not defined
+JavaScript error: https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-9891172707995683&output=html&h=90&twa=1&slotname=6193676054&adk=1460502994&adf=3297436742&w=808&fwrn=4&fwrnh=100&lmt=1569274059&guci=2.2.0.0.2.2.0.0&format=808x90&url=https%3A%2F%2Fwww.carrosnaweb.com.br%2Favancada.asp&flash=0&fwr=0&rh=90&rw=808&wgl=1&dt=1569274058952&bpp=14&bdt=747&fdt=421&idt=422&shv=r20190918&cbv=r20190131&saldr=aa&abxe=1&correlator=2774746964624&frm=20&pv=2&ga_vid=225042177.1569274059&ga_sid=1569274059&ga_hid=710958196&ga_fc=0&icsg=141995&dssz=17&mdo=0&mso=0&u_tz=-180&u_his=1&u_java=0&u_h=1080&u_w=1920&u_ah=1053&u_aw=1920&u_cd=24&u_nplug=0&u_nmime=0&adx=221&ady=149&biw=948&bih=939&scr_x=0&scr_y=0&eid=151527007%2C229739146%2C229739148&oid=3&rx=0&eae=0&fc=912&brdim=960%2C27%2C960%2C27%2C1920%2C27%2C960%2C1025%2C960%2C951&vis=1&rsz=d%7Cd%7CeE%7C&abl=NS&pfx=0&fu=1040&bc=29&ifi=1&uci=a!1&xpc=ukhNbrftN6&p=https%3A//www.carrosnaweb.com.br&dtd=452, line 1: TypeError: _.z is not a function
+JavaScript error: https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-9891172707995683&output=html&h=90&twa=1&slotname=6193676054&adk=1460502994&adf=3297436742&w=808&fwrn=4&fwrnh=100&lmt=1569274059&guci=2.2.0.0.2.2.0.0&format=808x90&url=https%3A%2F%2Fwww.carrosnaweb.com.br%2Favancada.asp&flash=0&fwr=0&rh=90&rw=808&wgl=1&dt=1569274058952&bpp=14&bdt=747&fdt=421&idt=422&shv=r20190918&cbv=r20190131&saldr=aa&abxe=1&correlator=2774746964624&frm=20&pv=2&ga_vid=225042177.1569274059&ga_sid=1569274059&ga_hid=710958196&ga_fc=0&icsg=141995&dssz=17&mdo=0&mso=0&u_tz=-180&u_his=1&u_java=0&u_h=1080&u_w=1920&u_ah=1053&u_aw=1920&u_cd=24&u_nplug=0&u_nmime=0&adx=221&ady=149&biw=948&bih=939&scr_x=0&scr_y=0&eid=151527007%2C229739146%2C229739148&oid=3&rx=0&eae=0&fc=912&brdim=960%2C27%2C960%2C27%2C1920%2C27%2C960%2C1025%2C960%2C951&vis=1&rsz=d%7Cd%7CeE%7C&abl=NS&pfx=0&fu=1040&bc=29&ifi=1&uci=a!1&xpc=ukhNbrftN6&p=https%3A//www.carrosnaweb.com.br&dtd=452, line 1: ReferenceError: init_icr is not defined
+JavaScript error: https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-9891172707995683&output=html&h=90&twa=1&slotname=6193676054&adk=1460502994&adf=3297436742&w=808&fwrn=4&fwrnh=100&lmt=1569274059&guci=2.2.0.0.2.2.0.0&format=808x90&url=https%3A%2F%2Fwww.carrosnaweb.com.br%2Favancada.asp&flash=0&fwr=0&rh=90&rw=808&wgl=1&dt=1569274058952&bpp=14&bdt=747&fdt=421&idt=422&shv=r20190918&cbv=r20190131&saldr=aa&abxe=1&correlator=2774746964624&frm=20&pv=2&ga_vid=225042177.1569274059&ga_sid=1569274059&ga_hid=710958196&ga_fc=0&icsg=141995&dssz=17&mdo=0&mso=0&u_tz=-180&u_his=1&u_java=0&u_h=1080&u_w=1920&u_ah=1053&u_aw=1920&u_cd=24&u_nplug=0&u_nmime=0&adx=221&ady=149&biw=948&bih=939&scr_x=0&scr_y=0&eid=151527007%2C229739146%2C229739148&oid=3&rx=0&eae=0&fc=912&brdim=960%2C27%2C960%2C27%2C1920%2C27%2C960%2C1025%2C960%2C951&vis=1&rsz=d%7Cd%7CeE%7C&abl=NS&pfx=0&fu=1040&bc=29&ifi=1&uci=a!1&xpc=ukhNbrftN6&p=https%3A//www.carrosnaweb.com.br&dtd=452, line 1: TypeError: _.u is not a function
+JavaScript error: https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-9891172707995683&output=html&h=90&twa=1&slotname=6193676054&adk=1460502994&adf=3297436742&w=808&fwrn=4&fwrnh=100&lmt=1569274059&guci=2.2.0.0.2.2.0.0&format=808x90&url=https%3A%2F%2Fwww.carrosnaweb.com.br%2Favancada.asp&flash=0&fwr=0&rh=90&rw=808&wgl=1&dt=1569274058952&bpp=14&bdt=747&fdt=421&idt=422&shv=r20190918&cbv=r20190131&saldr=aa&abxe=1&correlator=2774746964624&frm=20&pv=2&ga_vid=225042177.1569274059&ga_sid=1569274059&ga_hid=710958196&ga_fc=0&icsg=141995&dssz=17&mdo=0&mso=0&u_tz=-180&u_his=1&u_java=0&u_h=1080&u_w=1920&u_ah=1053&u_aw=1920&u_cd=24&u_nplug=0&u_nmime=0&adx=221&ady=149&biw=948&bih=939&scr_x=0&scr_y=0&eid=151527007%2C229739146%2C229739148&oid=3&rx=0&eae=0&fc=912&brdim=960%2C27%2C960%2C27%2C1920%2C27%2C960%2C1025%2C960%2C951&vis=1&rsz=d%7Cd%7CeE%7C&abl=NS&pfx=0&fu=1040&bc=29&ifi=1&uci=a!1&xpc=ukhNbrftN6&p=https%3A//www.carrosnaweb.com.br&dtd=452, line 1: ReferenceError: buildTextAd is not defined
+JavaScript error: https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-9891172707995683&output=html&h=90&twa=1&slotname=6193676054&adk=1460502994&adf=3297436742&w=808&fwrn=4&fwrnh=100&lmt=1569274059&guci=2.2.0.0.2.2.0.0&format=808x90&url=https%3A%2F%2Fwww.carrosnaweb.com.br%2Favancada.asp&flash=0&fwr=0&rh=90&rw=808&wgl=1&dt=1569274058952&bpp=14&bdt=747&fdt=421&idt=422&shv=r20190918&cbv=r20190131&saldr=aa&abxe=1&correlator=2774746964624&frm=20&pv=2&ga_vid=225042177.1569274059&ga_sid=1569274059&ga_hid=710958196&ga_fc=0&icsg=141995&dssz=17&mdo=0&mso=0&u_tz=-180&u_his=1&u_java=0&u_h=1080&u_w=1920&u_ah=1053&u_aw=1920&u_cd=24&u_nplug=0&u_nmime=0&adx=221&ady=149&biw=948&bih=939&scr_x=0&scr_y=0&eid=151527007%2C229739146%2C229739148&oid=3&rx=0&eae=0&fc=912&brdim=960%2C27%2C960%2C27%2C1920%2C27%2C960%2C1025%2C960%2C951&vis=1&rsz=d%7Cd%7CeE%7C&abl=NS&pfx=0&fu=1040&bc=29&ifi=1&uci=a!1&xpc=ukhNbrftN6&p=https%3A//www.carrosnaweb.com.br&dtd=452, line 1: ReferenceError: buildAttribution is not defined
+JavaScript error: https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-9891172707995683&output=html&h=90&twa=1&slotname=6193676054&adk=1460502994&adf=3297436742&w=808&fwrn=4&fwrnh=100&lmt=1569274059&guci=2.2.0.0.2.2.0.0&format=808x90&url=https%3A%2F%2Fwww.carrosnaweb.com.br%2Favancada.asp&flash=0&fwr=0&rh=90&rw=808&wgl=1&dt=1569274058952&bpp=14&bdt=747&fdt=421&idt=422&shv=r20190918&cbv=r20190131&saldr=aa&abxe=1&correlator=2774746964624&frm=20&pv=2&ga_vid=225042177.1569274059&ga_sid=1569274059&ga_hid=710958196&ga_fc=0&icsg=141995&dssz=17&mdo=0&mso=0&u_tz=-180&u_his=1&u_java=0&u_h=1080&u_w=1920&u_ah=1053&u_aw=1920&u_cd=24&u_nplug=0&u_nmime=0&adx=221&ady=149&biw=948&bih=939&scr_x=0&scr_y=0&eid=151527007%2C229739146%2C229739148&oid=3&rx=0&eae=0&fc=912&brdim=960%2C27%2C960%2C27%2C1920%2C27%2C960%2C1025%2C960%2C951&vis=1&rsz=d%7Cd%7CeE%7C&abl=NS&pfx=0&fu=1040&bc=29&ifi=1&uci=a!1&xpc=ukhNbrftN6&p=https%3A//www.carrosnaweb.com.br&dtd=452, line 1: ReferenceError: osdlfm is not defined
+JavaScript error: https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-9891172707995683&output=html&h=90&twa=1&slotname=6193676054&adk=1460502994&adf=3297436742&w=808&fwrn=4&fwrnh=100&lmt=1569274059&guci=2.2.0.0.2.2.0.0&format=808x90&url=https%3A%2F%2Fwww.carrosnaweb.com.br%2Favancada.asp&flash=0&fwr=0&rh=90&rw=808&wgl=1&dt=1569274058952&bpp=14&bdt=747&fdt=421&idt=422&shv=r20190918&cbv=r20190131&saldr=aa&abxe=1&correlator=2774746964624&frm=20&pv=2&ga_vid=225042177.1569274059&ga_sid=1569274059&ga_hid=710958196&ga_fc=0&icsg=141995&dssz=17&mdo=0&mso=0&u_tz=-180&u_his=1&u_java=0&u_h=1080&u_w=1920&u_ah=1053&u_aw=1920&u_cd=24&u_nplug=0&u_nmime=0&adx=221&ady=149&biw=948&bih=939&scr_x=0&scr_y=0&eid=151527007%2C229739146%2C229739148&oid=3&rx=0&eae=0&fc=912&brdim=960%2C27%2C960%2C27%2C1920%2C27%2C960%2C1025%2C960%2C951&vis=1&rsz=d%7Cd%7CeE%7C&abl=NS&pfx=0&fu=1040&bc=29&ifi=1&uci=a!1&xpc=ukhNbrftN6&p=https%3A//www.carrosnaweb.com.br&dtd=452, line 1: ReferenceError: googqscp is not defined
+JavaScript error: https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-9891172707995683&output=html&h=90&twa=1&slotname=6193676054&adk=1460502994&adf=3297436742&w=808&fwrn=4&fwrnh=100&lmt=1569274059&guci=2.2.0.0.2.2.0.0&format=808x90&url=https%3A%2F%2Fwww.carrosnaweb.com.br%2Favancada.asp&flash=0&fwr=0&rh=90&rw=808&wgl=1&dt=1569274058952&bpp=14&bdt=747&fdt=421&idt=422&shv=r20190918&cbv=r20190131&saldr=aa&abxe=1&correlator=2774746964624&frm=20&pv=2&ga_vid=225042177.1569274059&ga_sid=1569274059&ga_hid=710958196&ga_fc=0&icsg=141995&dssz=17&mdo=0&mso=0&u_tz=-180&u_his=1&u_java=0&u_h=1080&u_w=1920&u_ah=1053&u_aw=1920&u_cd=24&u_nplug=0&u_nmime=0&adx=221&ady=149&biw=948&bih=939&scr_x=0&scr_y=0&eid=151527007%2C229739146%2C229739148&oid=3&rx=0&eae=0&fc=912&brdim=960%2C27%2C960%2C27%2C1920%2C27%2C960%2C1025%2C960%2C951&vis=1&rsz=d%7Cd%7CeE%7C&abl=NS&pfx=0&fu=1040&bc=29&ifi=1&uci=a!1&xpc=ukhNbrftN6&p=https%3A//www.carrosnaweb.com.br&dtd=452, line 1: ReferenceError: adSlot is not defined
+[Parent 4196, Gecko_IOThread] WARNING: pipe error (83): Conexão fechada pela outra ponta: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1569274084419	Marionette	INFO	Stopped listening on port 37135
+1569274109284	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileCfdDmp"
+1569274109574	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569274109574	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569274109574	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569274109574	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569274111018	Marionette	INFO	Listening on port 37529
+1569274111089	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 4504, Gecko_IOThread] WARNING: pipe error (83): Conexão fechada pela outra ponta: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1569274144307	Marionette	INFO	Stopped listening on port 37529
+1569275762693	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile4sjX9a"
+1569275763001	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569275763001	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569275763001	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569275763001	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569275764380	Marionette	INFO	Listening on port 34073
+1569275764409	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 5790, Gecko_IOThread] WARNING: pipe error (83): Conexão fechada pela outra ponta: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1569275782298	Marionette	INFO	Stopped listening on port 34073
+1569276804415	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileClTPqw"
+1569276804711	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569276804711	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569276804711	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569276804711	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569276806195	Marionette	INFO	Listening on port 34621
+1569276806231	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 6796, Gecko_IOThread] WARNING: pipe error (83): Conexão fechada pela outra ponta: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1569276836731	Marionette	INFO	Stopped listening on port 34621
+1569276925806	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileclIIWy"
+1569276926118	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569276926118	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569276926118	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569276926118	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569276927746	Marionette	INFO	Listening on port 38785
+1569276927814	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 7107, Gecko_IOThread] WARNING: pipe error (83): Conexão fechada pela outra ponta: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1569276946747	Marionette	INFO	Stopped listening on port 38785
+1569276978953	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilemw0AMz"
+1569276979256	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569276979256	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569276979256	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569276979256	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569276980676	Marionette	INFO	Listening on port 43509
+1569276980758	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 7391, Gecko_IOThread] WARNING: pipe error (83): Conexão fechada pela outra ponta: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1569277003628	Marionette	INFO	Stopped listening on port 43509
+1569277067602	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileHBhvvv"
+1569277067900	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569277067900	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569277067900	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569277067900	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569277069314	Marionette	INFO	Listening on port 34807
+1569277069407	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 7697, Gecko_IOThread] WARNING: pipe error (83): Conexão fechada pela outra ponta: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1569277086483	Marionette	INFO	Stopped listening on port 34807
+1569277167280	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilesGrqwZ"
+1569277167584	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569277167584	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569277167584	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569277167584	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569277169023	Marionette	INFO	Listening on port 33429
+1569277169089	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 8001, Gecko_IOThread] WARNING: pipe error (83): Conexão fechada pela outra ponta: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1569277184824	Marionette	INFO	Stopped listening on port 33429
+1569277213347	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiler5FLv9"
+1569277213639	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569277213639	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569277213639	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569277213640	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569277215167	Marionette	INFO	Listening on port 37977
+1569277215255	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 8295, Gecko_IOThread] WARNING: pipe error (83): Conexão fechada pela outra ponta: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1569277232130	Marionette	INFO	Stopped listening on port 37977

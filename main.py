@@ -12,7 +12,7 @@ driver = webdriver.Firefox(firefox_profile=firefox_profile)
 driver.get('https://www.carrosnaweb.com.br/avancada.asp')
 
 
-def select_brand():
+def list_brands():
     WebDriverWait(driver, 10).until(
         EC.element_to_be_clickable((By.ID, 'fabricante'))
     )
@@ -23,8 +23,8 @@ def select_brand():
     for each_brand in all_brands:
         print(each_brand.get_attribute('value'))
 
+def select_brand(brand_name):
     brand_select = Select(driver.find_element_by_id('fabricante'))
-    brand_name = input()
     brand_option = brand_select.select_by_value(brand_name)
 
 
@@ -59,15 +59,31 @@ def select_year():
             break
 
 
+def pick_version(brand_name):
+    WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.TAG_NAME, 'tbody'))
+    )
+
+    all_versions = driver.find_elements_by_xpath('//*[starts-with(@title, "' + brand_name + '")]')
+    for each_version in all_versions:
+        print(each_version.get_attribute('title'))
+
+
 if __name__ == '__main__':
     full_page = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, 'body'))
     )
     print('Ready')
 
-    select_brand()
+    list_brands()
+
+    brand_name = input()
+    select_brand(brand_name)
+
     select_model()
+
     select_year()
 
-    WebDriverWait(driver, 10)
     driver.find_element_by_id('submit1').click()
+
+    pick_version(brand_name)

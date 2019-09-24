@@ -1,9 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support import expected_conditions as EC
+
+from bs4 import BeautifulSoup
+from bs4 import SoupStrainer
 
 
 firefox_profile = webdriver.FirefoxProfile()
@@ -91,6 +92,19 @@ def select_version(brand_name):
             break
 
 
+def page_soup(version_page):
+    WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.TAG_NAME, 'tbody'))
+    )
+
+    # soup = BeautifulSoup(version_page, 'html.parser')
+
+    # print(soup.find('tbody'))
+    all_tr = SoupStrainer('tr')
+    print(BeautifulSoup(version_page, 'html.parser', parse_only=all_tr).prettify())
+
+
+
 if __name__ == '__main__':
     full_page = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, 'body'))
@@ -109,3 +123,6 @@ if __name__ == '__main__':
     driver.find_element_by_id('submit1').click()
 
     select_version(brand_name)
+
+    version_page = driver.page_source
+    page_soup(version_page)

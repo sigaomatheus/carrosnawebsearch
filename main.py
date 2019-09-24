@@ -12,7 +12,7 @@ driver = webdriver.Firefox(firefox_profile=firefox_profile)
 driver.get('https://www.carrosnaweb.com.br/avancada.asp')
 
 
-def list_brands():
+def list_all_brands():
     WebDriverWait(driver, 10).until(
         EC.element_to_be_clickable((By.ID, 'fabricante'))
     )
@@ -23,12 +23,19 @@ def list_brands():
     for each_brand in all_brands:
         print(each_brand.get_attribute('value'))
 
+
 def select_brand(brand_name):
-    brand_select = Select(driver.find_element_by_id('fabricante'))
-    brand_option = brand_select.select_by_value(brand_name)
+    brand_select = driver.find_element_by_xpath('//select[@id="fabricante"]')
+    all_brands = brand_select.find_elements_by_tag_name('option')
+
+    for each_brand in all_brands:
+        each_brand_name = each_brand.get_attribute('value')
+        if brand_name.lower() == str(each_brand_name).lower():
+            each_brand.click()
+            break
 
 
-def select_model():
+def list_all_models():
     WebDriverWait(driver, 10).until(
         EC.element_to_be_clickable((By.ID, 'varnome'))
     )
@@ -39,9 +46,16 @@ def select_model():
     for each_model in all_models:
         print(each_model.get_attribute('value'))
 
-    model_select = Select(driver.find_element_by_id('varnome'))
-    model_name = input()
-    model_option = model_select.select_by_value(model_name)
+
+def select_model(model_name):
+    model_select = driver.find_element_by_xpath('//select[@id="varnome"]')
+    all_models = model_select.find_elements_by_tag_name('option')
+
+    for each_model in all_models:
+        each_model_name = each_model.get_attribute('value')
+        if model_name.lower() == str(each_model_name).lower():
+            each_model.click()
+            break
 
 
 def select_year():
@@ -51,22 +65,30 @@ def select_year():
 
     year_select = driver.find_element_by_xpath('//select[@id="anoini"]')
     all_years = year_select.find_elements_by_tag_name('option')
-    fab_year = input()
-    str(fab_year)
+
+    fab_year = str(input())
+
     for each_year in all_years:
         if fab_year == each_year.get_attribute('value'):
             each_year.click()
             break
 
 
-def pick_version(brand_name):
+def select_version(brand_name):
     WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.TAG_NAME, 'tbody'))
     )
 
-    all_versions = driver.find_elements_by_xpath('//*[starts-with(@title, "' + brand_name + '")]')
+    all_versions = driver.find_elements_by_xpath('//*[starts-with(@title, "' + brand_name.capitalize() + '")]')
     for each_version in all_versions:
-        print(each_version.get_attribute('title'))
+        print('[' + str(all_versions.index(each_version)+1) + '] ' + each_version.get_attribute('title'))
+
+    version_n = int(input())
+
+    for each_version in all_versions:
+        if version_n-1 == all_versions.index(each_version):
+            each_version.click()
+            break
 
 
 if __name__ == '__main__':
@@ -75,15 +97,15 @@ if __name__ == '__main__':
     )
     print('Ready')
 
-    list_brands()
-
+    list_all_brands()
     brand_name = input()
     select_brand(brand_name)
 
-    select_model()
+    list_all_models()
+    model_name = input()
+    select_model(model_name)
 
     select_year()
-
     driver.find_element_by_id('submit1').click()
 
-    pick_version(brand_name)
+    select_version(brand_name)

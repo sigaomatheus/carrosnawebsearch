@@ -97,12 +97,15 @@ def page_soup(version_page):
         EC.presence_of_element_located((By.TAG_NAME, 'tbody'))
     )
 
-    # soup = BeautifulSoup(version_page, 'html.parser')
+    # all_info_name = SoupStrainer(color='darkred', face='arial', size=2)
+    # soup = (BeautifulSoup(version_page, 'html.parser', parse_only=all_info_name))
+    # for string in soup.stripped_strings:
+    #     print(repr(string))
 
-    # print(soup.find('tbody'))
-    all_tr = SoupStrainer('tr')
-    print(BeautifulSoup(version_page, 'html.parser', parse_only=all_tr).prettify())
-
+    all_info_value = SoupStrainer('font', face='arial', size=2)
+    soup = (BeautifulSoup(version_page, 'html.parser', parse_only=all_info_value))
+    for string in soup.stripped_strings:
+        print(repr(string))
 
 
 if __name__ == '__main__':

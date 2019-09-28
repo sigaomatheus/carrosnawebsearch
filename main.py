@@ -105,8 +105,8 @@ def seleciona_ano(ano_fabricacao):
             cada_ano.click()
             break
 
-# Função para selecionar a versão do modelo
-def seleciona_versao(nome_marca):
+
+def lista_versoes(nome_marca):
     # Aguarda até que o elemento que contém todas as versões esteja disponível
     WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.TAG_NAME, 'tbody'))
@@ -116,14 +116,23 @@ def seleciona_versao(nome_marca):
     todas_versoes = driver.find_elements_by_xpath(f'//*[starts-with(@title, "{nome_marca.capitalize()}")]')
 
     # Percorre todos os elementos que contém o nome de uma versão para imprimir cada uma
+    print('\nVersões:')
     for cada_versao in todas_versoes:
-        print('[' + str(todas_versoes.index(cada_versao)+1) + '] ' + cada_versao.get_attribute('title'))
+        print('[' + str(todas_versoes.index(cada_versao) + 1) + '] ' + cada_versao.get_attribute('title'))
 
-    numero_versao = int(input())
 
-    # Percorre todos os elementos que contém uma versão para encontrar a versão escolhida e clicar
+# Função para selecionar a versão do modelo
+def seleciona_versao(nome_marca, escolha_versao):
+    # Aguarda até que o elemento que contém todas as versões esteja disponível
+    WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.TAG_NAME, 'tbody'))
+    )
+
+    # Pega todos os elementos que contém o nome de uma versão
+    todas_versoes = driver.find_elements_by_xpath(f'//*[starts-with(@title, "{nome_marca.capitalize()}")]')
+
     for cada_versao in todas_versoes:
-        if numero_versao-1 == todas_versoes.index(cada_versao):
+        if escolha_versao-1 == todas_versoes.index(cada_versao):
             cada_versao.click()
             break
 
@@ -135,16 +144,18 @@ if __name__ == '__main__':
     print('Ready\n')
 
     lista_todas_marcas()
-    nome_marca = input('\nDigite a marca: ')
+    nome_marca = input('\nEscolha a marca: ')
     seleciona_marca(nome_marca)
 
     lista_todos_modelos()
-    nome_modelo = input('\nDigite o modelo: ')
+    nome_modelo = input('\nEscolha o modelo: ')
     seleciona_modelo(nome_modelo)
 
-    ano_fabricacao = input(str('Digite o ano de fabricação: '))
+    ano_fabricacao = input(str('Escolha o ano de fabricação: '))
     seleciona_ano(ano_fabricacao)
 
     driver.find_element_by_id('submit1').click()
 
-    seleciona_versao(nome_marca)
+    lista_versoes(nome_marca)
+    escolha_versao = input('\nEscolha a versão: ')
+    seleciona_versao(nome_marca, int(escolha_versao))

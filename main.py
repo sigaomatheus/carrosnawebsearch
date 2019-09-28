@@ -106,6 +106,7 @@ def seleciona_ano(ano_fabricacao):
             break
 
 
+# Função para listar todas as versões disponíveis do modelo
 def lista_versoes(nome_marca):
     # Aguarda até que o elemento que contém todas as versões esteja disponível
     WebDriverWait(driver, 10).until(
@@ -137,6 +138,24 @@ def seleciona_versao(nome_marca, escolha_versao):
             break
 
 
+# Função para BeautifulSoup
+def soup_pagina_versao(pagina_versao):
+    # Aguarda até que o elemento que contém todas as informações esteja disponível
+    WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.TAG_NAME, 'tbody'))
+    )
+
+    # all_info_name = SoupStrainer(color='darkred', face='arial', size=2)
+    # soup = (BeautifulSoup(pagina_versao, 'html.parser', parse_only=all_info_name))
+    # for string in soup.stripped_strings:
+    #     print(repr(string))
+
+    all_info_value = SoupStrainer('font', face='arial', size=2)
+    soup = (BeautifulSoup(pagina_versao, 'html.parser', parse_only=all_info_value))
+    for string in soup.stripped_strings:
+        print(repr(string))
+
+
 if __name__ == '__main__':
     pagina_completa = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, 'body'))
@@ -159,3 +178,6 @@ if __name__ == '__main__':
     lista_versoes(nome_marca)
     escolha_versao = input('\nEscolha a versão: ')
     seleciona_versao(nome_marca, int(escolha_versao))
+
+    pagina_versao = driver.page_source
+    soup_pagina_versao(pagina_versao)

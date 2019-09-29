@@ -1,23 +1,25 @@
 from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
 from bs4 import BeautifulSoup
 from bs4 import SoupStrainer
 
 
-# Configura o perfil do Firefox para iniciar o navegador em navegação privada
-firefox_profile = webdriver.FirefoxProfile()
-firefox_profile.set_preference('browser.privatebrowsing.autostart', True)
+# Configura o Firefox para iniciar em modo headless e em navegação privada
+firefox_opt = Options()
+firefox_opt.headless = True
+firefox_prof = webdriver.FirefoxProfile()
+firefox_prof.set_preference('browser.privatebrowsing.autostart', True)
 
-# Inicia o browser carregando o perfil definido anteriormente
-driver = webdriver.Firefox(firefox_profile=firefox_profile)
+# Inicia o browser carregando as configurações definidas anteriormente
+driver = webdriver.Firefox(options=firefox_opt, firefox_profile=firefox_prof)
 driver.get('https://www.carrosnaweb.com.br/avancada.asp')
 
 
-# Função para listar todas as marcas disponíveis
-def lista_todas_marcas():
+# Função para buscar todas as marcas
+def busca_todas_marcas():
     # Aguarda até que o elemento de select das marcas esteja clicável
     WebDriverWait(driver, 10).until(
         EC.element_to_be_clickable((By.ID, 'fabricante'))
@@ -29,30 +31,28 @@ def lista_todas_marcas():
     # Pega todas as opções do select de marcas
     todas_marcas = select_marcas.find_elements_by_tag_name('option')
 
+    return todas_marcas
+
+
+# Função para listar todas as marcas disponíveis
+def lista_todas_marcas():
     # Imprime todas as marcas que estão como opção no select de marcas
     print('Marcas:')
-    for cada_marca in todas_marcas:
+    for cada_marca in busca_todas_marcas():
         print(cada_marca.get_attribute('value'))
 
 
 # Função para selecionar a marca escolhida
 def seleciona_marca(nome_marca):
-    # Pega o elemento select que contém as marcas disponíveis
-    select_marcas = driver.find_element_by_xpath('//select[@id="fabricante"]')
-
-    # Pega todas as opções do select de marcas
-    todas_marcas = select_marcas.find_elements_by_tag_name('option')
-
     # Percorre todas as opções do select de marcas até encontrar a marca escolhida para clicar
-    for cada_marca in todas_marcas:
+    for cada_marca in busca_todas_marcas():
         cada_nome_marca = cada_marca.get_attribute('value')
         if nome_marca.lower() == str(cada_nome_marca).lower():
             cada_marca.click()
             break
 
 
-# Função para listar todos os modelos disponíveis da marca
-def lista_todos_modelos():
+def busca_todos_modelos():
     # Aguarda até que o elemento de select dos modelos esteja clicável
     WebDriverWait(driver, 10).until(
         EC.element_to_be_clickable((By.ID, 'varnome'))
@@ -64,45 +64,71 @@ def lista_todos_modelos():
     # Pega todas as opções do select de modelos
     todos_modelos = select_modelos.find_elements_by_tag_name('option')
 
+    return todos_modelos
+
+
+# Função para listar todos os modelos disponíveis da marca
+def lista_todos_modelos():
     # Imprime todos os modelos que estão como opção no select de modelos
     print('Modelos:')
-    for cada_modelo in todos_modelos:
+    for cada_modelo in busca_todos_modelos():
         print(cada_modelo.get_attribute('value'))
 
 
 # Função para selecionar o modelo escolhido
 def seleciona_modelo(nome_modelo):
-    # Pega o elemento de select que contém os modelos disponíveis
-    select_modelo = driver.find_element_by_xpath('//select[@id="varnome"]')
-
-    # Pega todas as opções do select de modelos
-    todos_modelos = select_modelo.find_elements_by_tag_name('option')
-
     # Percorre todas as opções do select de modelos até encontrar o modelo escolhido para clicar
-    for cada_modelo in todos_modelos:
+    for cada_modelo in busca_todos_modelos():
         cada_nome_modelo = cada_modelo.get_attribute('value')
         if nome_modelo.lower() == str(cada_nome_modelo).lower():
             cada_modelo.click()
             break
 
 
-# Função para selecionar o ano do modelo
-def seleciona_ano(ano_fabricacao):
+# Função para buscar todos os anos de fabricação
+def busca_todos_anos_fab():
     # Aguarda até que o elemento de select do ano esteja clicável
     WebDriverWait(driver, 10).until(
         EC.element_to_be_clickable((By.ID, 'anoini'))
     )
 
     # Pega o elemento de select que contém os anos disponíveis
-    select_ano = driver.find_element_by_xpath('//select[@id="anoini"]')
+    select_ano_fab = driver.find_element_by_xpath('//select[@id="anoini"]')
 
     # Pega todas as opções do select de anos
-    todos_anos = select_ano.find_elements_by_tag_name('option')
+    todos_anos_fab = select_ano_fab.find_elements_by_tag_name('option')
 
-    # Percorre todas as opções do select de ano até encontrar o ano escolhido para clicar
-    for cada_ano in todos_anos:
-        if ano_fabricacao == cada_ano.get_attribute('value'):
-            cada_ano.click()
+    return todos_anos_fab
+
+
+# Função para buscar todos os anos de modelo
+def busca_todos_anos_mod():
+    # Aguarda até que o elemento de select do ano esteja clicável
+    WebDriverWait(driver, 10).until(
+        EC.element_to_be_clickable((By.ID, 'anofim'))
+    )
+
+    # Pega o elemento de select que contém os anos disponíveis
+    select_ano_mod = driver.find_element_by_xpath('//select[@id="anofim"]')
+
+    # Pega todas as opções do select de anos
+    todos_anos_mod = select_ano_mod.find_elements_by_tag_name('option')
+
+    return todos_anos_mod
+
+
+# Função para selecionar o ano
+def seleciona_ano(escolha_ano):
+    # Percorre todas as opções do select de ano de fabricação até encontrar o ano escolhido para clicar
+    for cada_ano_fab in busca_todos_anos_fab():
+        if escolha_ano == cada_ano_fab.get_attribute('value'):
+            cada_ano_fab.click()
+            break
+
+    # Percorre todas as opções do select de ano de modelo até encontrar o ano escolhido para clicar
+    for cada_ano_mod in busca_todos_anos_mod():
+        if escolha_ano == cada_ano_mod.get_attribute('value'):
+            cada_ano_mod.click()
             break
 
 
@@ -145,15 +171,11 @@ def soup_pagina_versao(pagina_versao):
         EC.presence_of_element_located((By.TAG_NAME, 'tbody'))
     )
 
-    # all_info_name = SoupStrainer(color='darkred', face='arial', size=2)
-    # soup = (BeautifulSoup(pagina_versao, 'html.parser', parse_only=all_info_name))
-    # for string in soup.stripped_strings:
-    #     print(repr(string))
-
-    all_info_value = SoupStrainer('font', face='arial', size=2)
-    soup = (BeautifulSoup(pagina_versao, 'html.parser', parse_only=all_info_value))
-    for string in soup.stripped_strings:
-        print(repr(string))
+    # Pega todas as informações da página da versão da imprime
+    todas_informacoes = SoupStrainer('font', face='arial', size=2)
+    soup = (BeautifulSoup(pagina_versao, 'html.parser', parse_only=todas_informacoes))
+    for cada_informacao in soup.stripped_strings:
+        print(repr(cada_informacao))
 
 
 if __name__ == '__main__':
@@ -162,16 +184,18 @@ if __name__ == '__main__':
     )
     print('Ready\n')
 
+    busca_todas_marcas()
     lista_todas_marcas()
     nome_marca = input('\nEscolha a marca: ')
     seleciona_marca(nome_marca)
 
+    busca_todos_modelos()
     lista_todos_modelos()
     nome_modelo = input('\nEscolha o modelo: ')
     seleciona_modelo(nome_modelo)
 
-    ano_fabricacao = input(str('Escolha o ano de fabricação: '))
-    seleciona_ano(ano_fabricacao)
+    escolha_ano = input(str('Escolha o ano do modelo (1954-2020): '))
+    seleciona_ano(escolha_ano)
 
     driver.find_element_by_id('submit1').click()
 
@@ -181,3 +205,4 @@ if __name__ == '__main__':
 
     pagina_versao = driver.page_source
     soup_pagina_versao(pagina_versao)
+    driver.quit()

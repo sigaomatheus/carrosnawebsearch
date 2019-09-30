@@ -171,14 +171,20 @@ def soup_pagina_versao(pagina_versao):
         EC.presence_of_element_located((By.TAG_NAME, 'tbody'))
     )
 
-    # Pega todas as informações da página da versão da imprime
-    todas_informacoes = SoupStrainer('font', face='arial', size=2)
-    soup = (BeautifulSoup(pagina_versao, 'html.parser', parse_only=todas_informacoes))
-    for cada_informacao in soup.stripped_strings:
-        print(repr(cada_informacao))
+    # Pega os títulos das informações da página da versão e imprime
+    titulo_info = SoupStrainer('font', color='darkred', face='arial', size=2)
+    soup = (BeautifulSoup(pagina_versao, 'html.parser', parse_only=titulo_info))
+    for cada_titulo_info in soup.stripped_strings:
+        print(cada_titulo_info)
+
+    # Pega os valores das informações da página da versão e imprime
+    valor_info = SoupStrainer('font', face='arial', size=2)
+    soup = (BeautifulSoup(pagina_versao, 'html.parser', parse_only=valor_info))
+    for cada_valor_info in soup.stripped_strings:
+        print(cada_valor_info)
 
 
-if __name__ == '__main__':
+def main():
     pagina_completa = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, 'body'))
     )
@@ -206,3 +212,7 @@ if __name__ == '__main__':
     pagina_versao = driver.page_source
     soup_pagina_versao(pagina_versao)
     driver.quit()
+
+
+if __name__ == '__main__':
+    main()

@@ -6,7 +6,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup as BS
 from bs4 import SoupStrainer as SS
 import unicodecsv
-import decode
 
 # Configura o Firefox para iniciar em modo headless e em navegação privada
 firefox_opt = Options()
@@ -159,25 +158,34 @@ def soup_pagina_versao(pagina_versao):
 
     # Pega os títulos das informações da página da versão e imprime
     # titulo_info = SS('font', color='darkred', face='arial', size=2)
-    # titulo__info_soup = (BS(pagina_versao, 'html.parser', parse_only=titulo_info))
+    # titulo_info_soup = (BS(pagina_versao, 'html.parser', parse_only=titulo_info))
     # for cada_titulo_info in titulo_info_soup.stripped_strings:
     #     print(cada_titulo_info)
 
-    titulo_info = SS('font', color='darkred', face='arial', size=2)
-    titulo_info_soup = (BS(pagina_versao, 'html.parser', parse_only=titulo_info))
-    titulo = [cada_titulo.decode('utf-8') for cada_titulo in titulo_info_soup.stripped_strings]
+    # titulo_info = SS('font', color='darkred', face='arial', size=2)
+    # titulo_info_soup = (BS(pagina_versao, 'html.parser', parse_only=titulo_info))
+    # titulo = [cada_titulo for cada_titulo in titulo_info_soup.stripped_strings]
+    # print(titulo)
 
-    with open('info.csv', 'a') as csv_file:
-        w = unicodecsv.writer(csv_file)
-        for p in range(len(titulo)):
-            w.writerow([titulo[p]])
-        w.writerow([])
+    # with open('info.csv', 'wb') as csv_file:
+    #     w = unicodecsv.writer(csv_file)
+    #     for p in range(len(titulo)):
+    #         w.writerow([titulo[p]])
 
     # Pega os valores das informações da página da versão e imprime
     # valor_info = SS('font', face='arial', size=2)
     # valor_soup = (BS(pagina_versao, 'html.parser', parse_only=valor_info))
     # for cada_valor_info in valor_soup.stripped_strings:
     #     print(cada_valor_info)
+
+    todas_infos = SS('font', face='arial', size=2)
+    todas_infos_soup = (BS(pagina_versao, 'html.parser', parse_only=todas_infos))
+    infos = [cada_info for cada_info in todas_infos_soup.stripped_strings]
+
+    with open('info.csv', 'a') as csv_file:
+        w = unicodecsv.writer(csv_file)
+        for p in range(len(infos)):
+            w.writerow([infos[p]])
 
 
 def main():

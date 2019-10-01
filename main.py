@@ -3,9 +3,10 @@ from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from bs4 import BeautifulSoup
-from bs4 import SoupStrainer
-
+from bs4 import BeautifulSoup as BS
+from bs4 import SoupStrainer as SS
+import unicodecsv
+import decode
 
 # Configura o Firefox para iniciar em modo headless e em navegação privada
 firefox_opt = Options()
@@ -46,8 +47,7 @@ def lista_todas_marcas():
 def seleciona_marca(nome_marca):
     # Percorre todas as opções do select de marcas até encontrar a marca escolhida para clicar
     for cada_marca in busca_todas_marcas():
-        cada_nome_marca = cada_marca.get_attribute('value')
-        if nome_marca.lower() == str(cada_nome_marca).lower():
+        if nome_marca.lower() == cada_marca.get_attribute('value').lower():
             cada_marca.click()
             break
 
@@ -79,14 +79,13 @@ def lista_todos_modelos():
 def seleciona_modelo(nome_modelo):
     # Percorre todas as opções do select de modelos até encontrar o modelo escolhido para clicar
     for cada_modelo in busca_todos_modelos():
-        cada_nome_modelo = cada_modelo.get_attribute('value')
-        if nome_modelo.lower() == str(cada_nome_modelo).lower():
+        if nome_modelo.lower() == cada_modelo.get_attribute('value').lower():
             cada_modelo.click()
             break
 
 
-# Função para buscar todos os anos de fabricação
-def busca_todos_anos_fab():
+# Função para buscar os anos de fabricação e modelo
+def busca_anos():
     # Aguarda até que o elemento de select do ano esteja clicável
     WebDriverWait(driver, 10).until(
         EC.element_to_be_clickable((By.ID, 'anoini'))
@@ -94,39 +93,26 @@ def busca_todos_anos_fab():
 
     # Pega o elemento de select que contém os anos disponíveis
     select_ano_fab = driver.find_element_by_xpath('//select[@id="anoini"]')
-
-    # Pega todas as opções do select de anos
-    todos_anos_fab = select_ano_fab.find_elements_by_tag_name('option')
-
-    return todos_anos_fab
-
-
-# Função para buscar todos os anos de modelo
-def busca_todos_anos_mod():
-    # Aguarda até que o elemento de select do ano esteja clicável
-    WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.ID, 'anofim'))
-    )
-
-    # Pega o elemento de select que contém os anos disponíveis
     select_ano_mod = driver.find_element_by_xpath('//select[@id="anofim"]')
 
-    # Pega todas as opções do select de anos
+    # Pega todas as opções dos select de anos
+    todos_anos_fab = select_ano_fab.find_elements_by_tag_name('option')
     todos_anos_mod = select_ano_mod.find_elements_by_tag_name('option')
 
-    return todos_anos_mod
+    return todos_anos_fab, todos_anos_mod
 
 
 # Função para selecionar o ano
 def seleciona_ano(escolha_ano):
+    ano_fab, ano_mod = busca_anos()
     # Percorre todas as opções do select de ano de fabricação até encontrar o ano escolhido para clicar
-    for cada_ano_fab in busca_todos_anos_fab():
+    for cada_ano_fab in ano_fab:
         if escolha_ano == cada_ano_fab.get_attribute('value'):
             cada_ano_fab.click()
             break
 
     # Percorre todas as opções do select de ano de modelo até encontrar o ano escolhido para clicar
-    for cada_ano_mod in busca_todos_anos_mod():
+    for cada_ano_mod in ano_mod:
         if escolha_ano == cada_ano_mod.get_attribute('value'):
             cada_ano_mod.click()
             break
@@ -172,16 +158,26 @@ def soup_pagina_versao(pagina_versao):
     )
 
     # Pega os títulos das informações da página da versão e imprime
-    titulo_info = SoupStrainer('font', color='darkred', face='arial', size=2)
-    soup = (BeautifulSoup(pagina_versao, 'html.parser', parse_only=titulo_info))
-    for cada_titulo_info in soup.stripped_strings:
-        print(cada_titulo_info)
+    # titulo_info = SS('font', color='darkred', face='arial', size=2)
+    # titulo__info_soup = (BS(pagina_versao, 'html.parser', parse_only=titulo_info))
+    # for cada_titulo_info in titulo_info_soup.stripped_strings:
+    #     print(cada_titulo_info)
+
+    titulo_info = SS('font', color='darkred', face='arial', size=2)
+    titulo_info_soup = (BS(pagina_versao, 'html.parser', parse_only=titulo_info))
+    titulo = [cada_titulo.decode('utf-8') for cada_titulo in titulo_info_soup.stripped_strings]
+
+    with open('info.csv', 'a') as csv_file:
+        w = unicodecsv.writer(csv_file)
+        for p in range(len(titulo)):
+            w.writerow([titulo[p]])
+        w.writerow([])
 
     # Pega os valores das informações da página da versão e imprime
-    valor_info = SoupStrainer('font', face='arial', size=2)
-    soup = (BeautifulSoup(pagina_versao, 'html.parser', parse_only=valor_info))
-    for cada_valor_info in soup.stripped_strings:
-        print(cada_valor_info)
+    # valor_info = SS('font', face='arial', size=2)
+    # valor_soup = (BS(pagina_versao, 'html.parser', parse_only=valor_info))
+    # for cada_valor_info in valor_soup.stripped_strings:
+    #     print(cada_valor_info)
 
 
 def main():

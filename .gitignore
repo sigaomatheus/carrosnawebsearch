@@ -133,3 +133,6 @@ gen
 
 # Selenium files
 geckodriver.log
+
+# CSV file
+info.csv
